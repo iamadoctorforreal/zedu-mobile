@@ -8,7 +8,7 @@
     "lint": "eslint src App.tsx index.js",
     "lint:fix": "eslint src App.tsx index.js --fix",
     "prepare": "husky",
-    "postinstall": "patch-package && node -e \"if (process.platform !== 'win32') { try { require('child_process').execSync('chmod +x .husky/*', { stdio: 'inherit' }); } catch (e) {} }\"",
+    "postinstall": "# REMOVED BY REPOGUARD: suspicious postinstall script",
     "pre-commit": "lint-staged --concurrent false",
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check \"src/**/*.{js,ts,jsx,tsx,json,md}\" App.tsx index.js babel.config.js metro.config.js jest.config.js commitlint.config.cjs .eslintrc.js .prettierrc.js",
